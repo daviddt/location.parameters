@@ -10,7 +10,7 @@
 
 		// We want to skip this parameters if the value is empty
 		// therefor we use skip
-		if (currentParameter[1] === "" || currentParameter[1] === undefined) continue; 
+		if (currentParameter[1] === "" || currentParameter[1] === 'undefined') continue; 
     		parameters[w.decodeURIComponent(currentParameter[0])] = w.decodeURIComponent(currentParameter[1]);
 	}
 
