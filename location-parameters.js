@@ -1,7 +1,7 @@
 (function(d, w, undefined){
 	
 	var queryString = d.location.search.substring(1).split('&'),
-		parameters = {};
+	    parameters = {};
 
 	for (var i = 0; i < queryString.length; i++) {
 
@@ -11,7 +11,7 @@
 		// We want to skip this parameters if the value is empty
 		// therefor we use skip
 		if (currentParameter[1] === "" || currentParameter[1] === undefined) continue; 
-    	parameters[w.decodeURIComponent(currentParameter[0])] = w.decodeURIComponent(currentParameter[1]);
+    		parameters[w.decodeURIComponent(currentParameter[0])] = w.decodeURIComponent(currentParameter[1]);
 	}
 
 	// we attach the parameters to location.parameters
